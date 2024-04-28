@@ -17,12 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from main.views import *
-from main.views import render_table
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_render),
-    path('data/', render_table, name='render_table'),
     path('send', send)
 ]
 
